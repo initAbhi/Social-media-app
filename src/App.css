@@ -1,0 +1,175 @@
+:root {
+  --purple: #b87df0;
+  --grey: #212529;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  background-color: black;
+  color: var(--purple);
+}
+
+a {
+  color: var(--purple);
+}
+
+.custom-header {
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+}
+
+.no-outline input {
+  box-shadow: none;
+  outline: none;
+  border-color: black;
+  color: #b87df0;
+}
+
+.no-outline input:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: black;
+  color: #b87df0;
+}
+
+.middle-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.custom-empty-page {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-sidebar {
+  height: 100%;
+  border-right: 1px solid var(--purple);
+  width: 20%;
+}
+
+.custom-loadingScreen {
+  height: 70vh;
+  width: 100vw;
+  /* margin: 250px 0 0 450px; */
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 100px;
+  margin-top: 40px;
+  padding: 20px;
+  min-width: 70vw;
+}
+.custom-input {
+  min-width: 600px;
+}
+
+::placeholder {
+  color: #b87df0;
+  opacity: 1; /* Firefox */
+}
+
+.search-button:hover {
+  background-color: #b87df0;
+}
+
+.custom-nav-link {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: large;
+  height: 40px;
+  display: block;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.postlist-container {
+  display: flex;
+  padding: 10px;
+  /* margin: 20px; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* background-color: black;    */
+  background-color: #212529;
+  /* min-width: 77vw; */
+  width: 100%;
+}
+
+.custom-card {
+  margin: 20px;
+  min-height: 250px;
+  width: 480px;
+  z-index: 0;
+  border-radius: 5px;
+}
+
+.custom-card:hover {
+  transform: scale(105%);
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 2px 20px 2px var(--purple);
+}
+
+.custom-badge {
+  background-color: var(--purple);
+  min-height: 30px;
+  min-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+  margin-left: -14px;
+  border-radius: 4px;
+}
+
+.custom-footer {
+  margin-top: 2px;
+  z-index: 10;
+}
+
+/*templates ------------------------------------------------------------------------------------------------------------------------->*/ 
+.border-rad-5 {
+  border-radius: 5px;
+}
+.f-purple {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+.b-purple {
+  background-color: var(--purple);
+}
+
+.b-black {
+  background-color: black;
+}
+
+.t-white {
+  color: white;
+}
+
+.purple-glow {
+  box-shadow: 2px 2px 15px 2px var(--purple);
+}
+
+
+/* Utilities ---------------------------- */
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
